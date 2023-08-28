@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Formulario - Practica</title>
+</head>
+
+<body>
+    <section class="d-flex vh-100 flex-column gap-4 justify-content-center align-items-center">
+        <h1 class="text-center">FORMULARIO</h1>
+        <form action="/09_fetch_prueba/index.html" class="formulario d-flex flex-column justify-content-between" id="formulario">
+            <div class="mb-3 d-flex flex-column align-items-center">
+                <label for="nombre" class="form-label fw-bold">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+                <div id="error-nombre" class="form-text text-danger fw-bold" style="visibility: hidden"></div>
+            </div>
+            <div class="mb-3 d-flex flex-column align-items-center">
+                <label for="apellido" class="form-label fw-bold">Apellido</label>
+                <input type="text" class="form-control" id="apellido">
+                <div id="error-apellido" class="form-text text-danger fw-bold" style="visibility: hidden"></div>
+                
+            </div>
+            <div class="mb-3 d-flex flex-column align-items-center">
+                <label for="contrasenia" class="form-label fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="contrasenia">
+                <div id="error-contrasenia" class="form-text text-danger fw-bold" style="visibility: hidden"></div>
+            </div>
+            <div class="d-flex justify-content-center mb-2">
+                <button type="submit" class="btn btn-success">Enviar Formulario</button>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
